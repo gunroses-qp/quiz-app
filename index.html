@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>保密知识在线刷题</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>保密知识在线刷题</h1>
+        <div id="start-screen" class="screen">
+            <p>本测试包含填空题、判断题、单选题和多选题。</p>
+            <button id="start-btn">开始测试</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="progress">第 <span id="current-q">1</span> 题，共 <span id="total-q">80</span> 题</div>
+            <div id="question"></div>
+            <div id="options"></div>
+            <button id="next-btn">下一题</button>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2>测试完成！</h2>
+            <p>您的得分：<span id="score"></span> / <span id="total"></span></p>
+            <p>正确率：<span id="percentage"></span>%</p>
+            <button id="restart-btn">重新测试</button>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
