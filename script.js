@@ -1,4 +1,4 @@
-﻿let currentQuestion = 0;
+let currentQuestion = 0;
 let score = 0;
 let userAnswers = [];
 let quizStarted = false;
